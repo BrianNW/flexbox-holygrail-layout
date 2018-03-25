@@ -1,0 +1,41 @@
+
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	margin: 0;
+}
+
+#main {
+	display: flex;
+	flex-grow: 1;	
+}
+
+#content {
+	/* flex: 4 1 0%;*/
+}
+
+#secondary {
+	 flex-basis: 200px; 
+	/*flex: 1 1 0%;*/
+	order: -1;
+/* order -1 value puts first sidebar to left side */
+	
+}
+
+#tertiary {
+	 flex-basis: 150px;
+	/* flex: 1 1 0%;  */
+	/*grow 1, shrink 1, 0% width */
+}
+
+#header, #footer {
+	text-align: center;
+	padding: 20px;
+}
+
+#main * {
+	padding:20px;
+	border: 1px solid white;
+}
